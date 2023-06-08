@@ -1,0 +1,21 @@
+Installing mysql-server
+    sudo apt update
+
+    sudo apt-get install mysql-server
+
+    systemctl is-active mysql
+
+    sudo mysql_secure_installation           if password for root doesn't change, open new terminal and repeat as follows:
+
+    sudo mysql
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'enterpassword';    
+    exit
+
+    sudo mysql_secure_installation
+    enter y and change the password, then enter y in all options
+
+    systemctl status mysql.service
+
+    sudo mysql -u root -p
+    quit for quit
+    

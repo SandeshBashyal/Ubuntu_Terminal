@@ -18,3 +18,6 @@ Here are the codes after installing the ubuntu and the necessary codes for the j
 5. zsh terminal (replace bash shell :-> Recommended) [In Update]
     Go to ZSH_Shell.txt
 
+6. Install mysql
+	Go to mysql.txt
+	
