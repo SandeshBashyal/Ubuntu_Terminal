@@ -6,18 +6,39 @@ Here are the codes after installing the ubuntu and the necessary codes for the j
 	
 	sudo apt upgrade
 
-2. Customize look and feel of environment (if interested): 
+2. Install curl
+	sudo sed -i -e 's/us.archive.ubuntu.com/archive.ubuntu.com/g' /etc/apt/sources.list
+	
+	sudo apt update
+	
+	sudo apt install curl
+
+3. Customize look and feel of environment (if interested): 
 	sudo apt install gnome-tweaks
 	
-3. Web Browser: I've installed brave:
+4. Web Browser: I've installed brave:
 	Go to Web_Browser.txt
 
-4. git:
+5. git:
     sudo apt install git
 
-5. zsh terminal (replace bash shell :-> Recommended) [In Update]
+6. zsh terminal (replace bash shell :-> Recommended) [In Update]
     Go to ZSH_Shell.txt
 
-6. Install mysql
+7. Install mysql
 	Go to mysql.txt
 	
+8. Dummy Output Speaker
+	pulseaudio -k && sudo alsa force-reload
+	
+9. Alias in terminal
+	alias coding='cd /media/zetahellstar/Bashyal/Coding'
+		
+10. Mount drive
+	sudo ntfsfix /dev/sdb5
+
+11. pip
+	sudo apt install python3-pip
+	
+
+
