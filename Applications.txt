@@ -1,0 +1,43 @@
+Telegram:
+sudo apt update
+sudo apt telegram-desktop
+-> Install from link:
+https://desktop.telegram.org/
+Download tar.xz file
+tar -xvf tsetup.4.14.2.tar.xz
+cd Telegram
+./Telegram
+
+Slack:
+sudo snap install slack --classic
+
+VSCode:
+sudo snap install --classic code
+
+Raspberry Pi Imager
+sudo snap install rpi-imager
+
+Angry Ip Manager
+https://angryip.org/download/#linux
+sudo dpkg -i '~/Downloads/ipscan_3.9.1_amd64.deb'
+
+Putty (ssh enabled/ not)
+sudo apt install putty
+
+VNC Server:
+sudo apt install xfce4 xfce4-goodies
+sudo apt install tightvncserver
+-> Link: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-22-04
+vncserver
+vncpasswd
+vncserver -kill :1
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+nano ~/.vnc/xstartup
+	#!/bin/sh
+	xrdb $HOME/.Xresources
+	startxfce4 &
+chmod +x ~/.vnc/xstartup
+vncserver -localhost
+ssh -L 59000:localhost:5901 -C -N -l zetahellstar your_server_ip
+sudo apt install openssh-server
+	
